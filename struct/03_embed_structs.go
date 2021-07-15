@@ -12,27 +12,22 @@ Print each fields of struct truck and sedan.
 
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 type vehicle struct {
 	doors int
 	color string
 }
-
 type truck struct {
 	vehicle
 	sixWheel bool
 }
-
 type sedan struct {
 	vehicle
 	luxury bool
 }
 
 func main() {
-
 	t := truck{
 		sixWheel: true,
 		vehicle: vehicle{
